@@ -1,4 +1,4 @@
-/* CSS */
+
 
 /* animation css */
 
@@ -53,7 +53,7 @@ img.wedding {
     fill: #475569;
 }
 .bi.putih {
-    fill: #F87171;
+    fill: #ecce96;
 }
 
 .nav {
@@ -376,7 +376,7 @@ ul li a.active{
 
 @media screen and (max-width: 639px) {
     ul li a.active{
-        background-color: salmon;
+        background-color: rgb(250, 199, 140);
     }
     ul li a {
         width: 55px;

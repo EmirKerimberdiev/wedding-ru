@@ -189,6 +189,10 @@ document.getElementById('open').addEventListener('click', () => {
 })
 
 
+
+
+
+
 // END JS ANIMATION
 
 // LIGHBOX JS
