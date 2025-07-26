@@ -254,6 +254,37 @@ const navLi = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('section');
 
 
+
+const countDownDate = new Date("Aug 23, 2025 15:00:00").getTime();
+
+  const countdownFunction = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    if (distance <= 0) {
+      clearInterval(countdownFunction);
+      document.getElementById("day").innerHTML = "00";
+      document.getElementById("hour").innerHTML = "00";
+      document.getElementById("minute").innerHTML = "00";
+      document.getElementById("second").innerHTML = "00";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("day").innerHTML = String(days).padStart(2, "0");
+    document.getElementById("hour").innerHTML = String(hours).padStart(2, "0");
+    document.getElementById("minute").innerHTML = String(minutes).padStart(2, "0");
+    document.getElementById("second").innerHTML = String(seconds).padStart(2, "0");
+  }, 1000);
+
+
+
 window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {

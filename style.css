@@ -620,6 +620,20 @@ ul li a.active svg {
             animation-duration: 20s;
 }
 
+
+.circle4,
+.circle3,
+.circle2,
+.circle1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+span{
+    justify-content: center;
+}
+
 @-webkit-keyframes moveForever {
     0% {
         -webkit-transform: translate3d(-90px, 0, 0);
